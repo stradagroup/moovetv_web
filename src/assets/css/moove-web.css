@@ -1,0 +1,283 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../../assets/fonts/Montserrat/Montserrat-Medium.ttf'); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.onboarding-page {
+    overflow-y: hidden;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background:linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../../assets/images/bg.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.advertisers-page {
+    overflow-y: hidden;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    /*background: linear-gradient(55deg, rgba(7, 10, 20, 0.99) 48%, rgba(9, 10, 13, 0.8));*/
+    background:linear-gradient(90deg,rgba(0,0,0,0.98) 45%,rgba(0,0,0,0.1)),url(../../assets/images/banner.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.logo2{
+    padding: 2rem 0;
+}
+.form-input,select,textarea,button,.form-control,.input-field:focus,.input-field:active {
+    outline:0px !important;
+    -webkit-appearance:none!important;
+    border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none !important;
+}
+button:hover{
+    cursor: pointer;
+}
+.signin-btn{
+    background: #0774BB;
+    border: none;
+    border-radius: 25px;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding: 8px 2.5rem;
+}
+.head-text{
+    padding-top: 21%
+}
+.head-text h1{
+    font-family: Montserrat-Bold;
+    font-size: 50px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 40px;
+}
+.head-text p{
+    font-family: Montserrat-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 15px;
+}
+.get-started{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.get-started-btn{
+    background: #0774BB;
+    border-radius: 30px;
+    border: none;
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding: 10px 2em;
+    transition: 2s ease-in-out all;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+.download-btn{
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+    color: #0774BB;
+    font-weight: 600;
+    height: 37px;
+    margin-top: 2em;
+    margin-right: 1em;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
+}
+
+.icons{
+    padding-top: 18%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+.fontawesom{
+    font-size: 40px;
+    text-align: center;
+}
+.icons p{
+    padding-top: 5px;
+    font-family: Montserrat-Regular;
+}
+.left-nav{
+    height: 100vh;
+    background-color: #1a1a1a;
+    /*padding: 1em;*/
+}
+.right-nav{
+    height: 100vh;
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tab .active{
+    transition: .1s ease-in-out all;
+    /*background-color: #0774BB;*/
+    border-left: 4px solid #0774BB;
+    /*transform: scale(1.1);*/
+}
+.tab .active .fontawesom{
+    font-size: 40px;
+}
+.tablinks{
+    height: 31.4vh;
+    background-color: #1a1a1a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    /*border-bottom: 1px solid #666;*/
+}
+.tablinks:hover{
+    /*transition: transform .2s;
+    transform: scale(1.1);*/
+}
+.fontawesom{
+    font-size: 33px;
+    text-align: center;
+}
+.fontawesom:focus{
+    font-size: 40px;
+    text-align: center;
+    /*transform: scale(1.1);*/
+}
+.tablinks p{
+    font-size: 13px;
+    padding: 5px;
+    font-family: Montserrat-Regular;
+}
+#advertisers, #drivers, #partners{
+    height: 100vh;
+    width: 100%;
+}
+.advertisers-text{
+    transition: .2s ease-in-out all;
+    padding-top: 16%;
+    width: 50%;
+}
+.advertisers-text h1{
+    font-family: Montserrat-Medium;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-bottom: 30px;
+}
+.advertisers-text p{
+    opacity: 0.8;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #E8E8E8;
+    letter-spacing: 0;
+    padding-bottom: 30px;
+}
+
+.modal-content{
+    padding: 1em;
+}
+.close{
+    color: #FFFFFF;
+    padding: 1em !important;
+}
+.modal-dialog {
+    max-width: 350px !important;
+    margin: 7.75rem auto !important;
+}
+.ad-icon{
+    width: 7em;
+    padding-bottom: 2px;
+}
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.5rem 1rem;
+}
+.moove-modal-text{
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    font-family: Montserrat-Regular;
+}
+.flag{
+    background-color: #9D9D9D;
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 8px;
+}
+.form-input{
+    width: 100%;
+    color: #FFFFFF;
+    border: 1px solid #9D9D9D;
+    background-color: #9D9D9D;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 7px;
+    opacity: 0.9;
+    font-family: Montserrat-Regular;
+}
+.form-input::placeholder{
+    color: #fff;
+}
+.btn-continue{
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(55deg, rgba(33,150,243,1), rgba(33,150,283,0.6));
+    /*background: linear-gradient(55deg, rgba(33.150,243,1), rgba(33.150,283,1));*/
+    /*background-color: #2196F3;*/
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+}
