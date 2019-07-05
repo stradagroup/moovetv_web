@@ -256,9 +256,11 @@ button:hover{
     padding: 1em;
     border-radius: 10px;
 }
-.close{
-    color: #FFFFFF;
-    padding: 1em !important;
+.close {
+    color: #fff;
+    padding: 10px 15px !important;
+    background-color: #0774BB !important;
+    border-radius: 50%;
 }
 .modal-dialog {
     max-width: 350px !important;
@@ -320,10 +322,7 @@ button:hover{
     flex: 1 1 auto;
     padding: 0.5rem 0.5rem;
 }
-.close {
-    color: #000000;
-     padding: 15px !important;
-}
+
 /*.modal {*/
     /*display: none;*/
     /*position: fixed;*/

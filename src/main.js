@@ -24,6 +24,7 @@ import BootstrapVue from 'bootstrap-vue'
 import axios from 'axios'
 
 Vue.prototype.$http = axios
+// windows.axios=axios
 ApiService.init('https://ivoholdings.com/api/v1');
 
 // if (store.dispatch('isLoggedIn'))
