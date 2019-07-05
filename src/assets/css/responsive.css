@@ -43,7 +43,7 @@
 
 }
 
-@media (min-height: 600px) and (max-height: 610px) {
+@media (min-height: 525px) and (max-height: 630px) {
 .icons{
     padding-top: 10%;
     display: flex;
