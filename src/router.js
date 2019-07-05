@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Moovetv from './views/Moovetv.vue'
+// import Testjs from 'components/Testjs'
 
 Vue.use(Router)
 
@@ -27,6 +28,16 @@ export default new Router({
             title: "Moovetv",
 
         }
-    }
+    },
+      // {
+      //     path: '/components',
+      //     name: 'Testjs',
+      //     component: Testjs,
+      //     meta: {
+      //         title: "Testjs",
+      //
+      //     }
+      // },
+
   ]
 })
