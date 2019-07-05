@@ -31,26 +31,29 @@
         </div>
         <div class="head-section">
             <div class="container">
-                <div class="head-text animated bounceInDown">
-                    <h1>Your One Stop Movie Store</h1>
-                    <p>GET STARTED WITH US AND ENJOY ALL OUR MULTI-CONTENT CHANNELS FOR FREE</p>
-                    <div class="get-started ">
-                        <router-link to="/Moovetv"><button class="get-started-btn bounce-1">GET STARTED</button></router-link>
+                <div class="moove-flex">
+                    <div class="space"></div>
+                    <div class="head-text animated bounceInDown">
+                        <h1>Your One Stop Movie Store</h1>
+                        <p>GET STARTED WITH US AND ENJOY ALL OUR MULTI-CONTENT CHANNELS FOR FREE</p>
+                        <div class="get-started ">
+                            <router-link to="/Moovetv"><button class="get-started-btn bounce-1">GET STARTED</button></router-link>
+                        </div>
                     </div>
-                </div>
-                <div class="icons animated bounceInUp">
-                    <router-link to="Moovetv" class="home_icons">
-                        <font-awesome-icon icon="tablet-alt" class="fontawesom"/>
-                        <p>Advertisers</p>
-                    </router-link>
-                    <router-link to="Moovetv" class="home_icons">
-                        <font-awesome-icon icon="car" class="fontawesom"/>
-                        <p>Driver</p>
-                    </router-link>
+                    <div class="icons animated bounceInUp">
+                        <router-link to="Moovetv" class="home_icons">
+                            <font-awesome-icon icon="tablet-alt" class="fontawesom"/>
+                            <p>Advertisers</p>
+                        </router-link>
+                        <router-link to="Moovetv" class="home_icons">
+                            <font-awesome-icon icon="car" class="fontawesom"/>
+                            <p>Driver</p>
+                        </router-link>
                         <router-link to="Moovetv" class="home_icons">
                             <font-awesome-icon icon="desktop" class="fontawesom"/>
-                        <p>Content Partners</p>
+                            <p>Content Partners</p>
                         </router-link>
+                    </div>
                 </div>
             </div>
         </div>

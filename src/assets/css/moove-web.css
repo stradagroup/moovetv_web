@@ -65,7 +65,7 @@ button:hover{
     border: 1px solid #0774BB;
     border-radius: 25px;
     font-family: Montserrat-SemiBold;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
     padding: 8px 2.5rem;
@@ -77,8 +77,17 @@ button:hover{
     color: #0774BB;
     border: 1px solid #0774BB;
 }
+.head-section{
+    height: 100vh;
+}
+.moove-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 85vh;
+}
 .head-text{
-    padding-top: 21%
+    /*padding-top: 21%*/
 }
 .head-text h1{
     font-family: Montserrat-Bold;
@@ -108,7 +117,7 @@ button:hover{
     border-radius: 30px;
     border: 1px solid #0774BB;
     font-family: Montserrat-Medium;
-    font-size: 20px;
+    font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
     padding: 10px 2em;
@@ -142,7 +151,7 @@ button:hover{
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 16px;
     border: 1px solid #FFFFFF;
     padding: 5px 20px;
     font-size: 15px;
@@ -161,7 +170,7 @@ button:hover{
 }
 
 .icons{
-    padding-top: 18%;
+    /*padding-top: 18%;*/
     display: flex;
     justify-content: space-between;
     text-align: center;

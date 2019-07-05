@@ -3,7 +3,7 @@
 
 
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-1 col-sm-2">
                 <div class="left-nav">
 
                     <div class="tab">
@@ -21,7 +21,7 @@
 
                 </div>
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11 col-sm-10">
                 <div class="right-nav">
                     <div id="advertisers" class="tabcontent" v-if="tab === 'advertisers'">
                         <div class="container">
