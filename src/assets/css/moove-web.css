@@ -62,7 +62,7 @@ button:hover{
 }
 .signin-btn{
     background: #0774BB;
-    border: none;
+    border: 1px solid #0774BB;
     border-radius: 25px;
     font-family: Montserrat-SemiBold;
     font-size: 18px;
@@ -106,7 +106,7 @@ button:hover{
 .get-started-btn{
     background: #0774BB;
     border-radius: 30px;
-    border: none;
+    border: 1px solid #0774BB;
     font-family: Montserrat-Medium;
     font-size: 20px;
     color: #FFFFFF;
@@ -209,10 +209,7 @@ button:hover{
     text-align: center;
     /*border-bottom: 1px solid #666;*/
 }
-.tablinks:hover{
-    /*transition: transform .2s;
-    transform: scale(1.1);*/
-}
+
 .fontawesom{
     font-size: 33px;
     text-align: center;
@@ -257,6 +254,7 @@ button:hover{
 
 .modal-content{
     padding: 1em;
+    border-radius: 10px;
 }
 .close{
     color: #FFFFFF;

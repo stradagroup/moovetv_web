@@ -12,14 +12,14 @@
                     <div class="text-center">
                         <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
                     </div>
-                    <form class="click-animations" @submit.prevent="login">
+                    <form class="click-animations" @submit.prevent="Login">
                         <div class="modal-body text-center">
-                            <p class="moove-modal-text">Advertise with MooveTV <br>Sign In</p>
+                            <p class="moove-modal-text">Sign In to access MooveTV</p>
                             <div class="form-group" for="inputEmail">
-                                <input v-model="email" type="email" id="inputEmail" class="form-input" placeholder="Email" required autofocus>
+                                <input v-model="email" type="email" id="email" class="form-input" placeholder="Email" required autofocus>
                             </div>
                             <div class="form-group" for="inputPassword">
-                                <input v-model="password" type="password" id="inputPassword" class="form-input" placeholder="Password" required>
+                                <input v-model="password" type="password" id="password" class="form-input" placeholder="Password" required>
                             </div>
                             <button type="submit" class="btn-continue ">Continue</button>
                         </div>
@@ -32,7 +32,7 @@
         <div class="head-section">
             <div class="container">
                 <div class="head-text animated bounceInDown">
-                    <h1>Your one Stop movie store</h1>
+                    <h1>Your One Stop Movie Store</h1>
                     <p>GET STARTED WITH US AND ENJOY ALL OUR MULTI-CONTENT CHANNELS FOR FREE</p>
                     <div class="get-started ">
                         <router-link to="/Moovetv"><button class="get-started-btn bounce-1">GET STARTED</button></router-link>
@@ -60,14 +60,49 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+
+// export default {
+//   name: 'home',
+//   components: {
+//
+//   }
+// }
+import {mapActions} from "vuex";
+import router from "../router";
 
 export default {
-  name: 'home',
-  components: {
-    // HelloWorld
-  }
+    components: {},
+    computed: {
+        currentPage() {
+            // console.log(this.$route.name);
+            return this.$route.name;
+        }
+    },
+    data: function () {
+        return {
+            email: "",
+            password: "",
+            loading: false
+        };
+    },
+    methods: {
+        ...mapActions({loginUser: 'LOGIN'}),
+        async Login() {
+            let that = this;
+            this.loading = true;
+            await this.loginUser({
+                email: this.email,
+                password: this.password
+            }).then(function () {
+                that.$toastr.success("Login Successful!", {timeOut: 5000});
+                router.push({name: 'landing'});
+            }).catch((error) => {
+                this.$toastr.error(error.message, "Login Failed!", {timeOut: 5000});
+                this.loading = false;
+            });
+            this.loading = false;
+        }
+    }
 }
 
 </script>

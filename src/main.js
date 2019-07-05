@@ -1,6 +1,8 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App.vue'
 import router from './router'
+import {ApiService} from "./services/api.service";
 import VModal from 'vue-js-modal'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
@@ -22,6 +24,13 @@ import BootstrapVue from 'bootstrap-vue'
 import axios from 'axios'
 
 Vue.prototype.$http = axios
+ApiService.init('https://ivoholdings.com/api/v1');
+
+// if (store.dispatch('isLoggedIn'))
+//     ApiService.setHeader(store.getters.GET_AUTH_TOKEN);
+// else
+//     store.dispatch('UNSET_USER').then(() => {
+//     });
 
 library.add(faUserSecret, faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -29,6 +38,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false;
 Vue.use(VModal, VueTaber, VueTabs);
 Vue.use(BootstrapVue);
+Vue.use(Vuex);
 // Vue.use(vue-jquery);
 // window.$ = require('jquery')
 // window.JQuery = require('jquery')

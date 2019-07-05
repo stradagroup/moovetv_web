@@ -167,3 +167,15 @@
 }*/
 
 }
+
+@media (min-height: 927px) and (max-height: 1050px) {
+    .head-text{
+        padding-top: 27%
+    }
+    .icons{
+        padding-top: 25%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
