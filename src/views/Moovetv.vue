@@ -201,9 +201,12 @@
             // b-button,
             // b-modal
         },
-        data() {
+        data: function() {
             return  {
                 tab: 'advertisers',
+                email: "",
+                password: "",
+                loading: false
             }
         }
     }

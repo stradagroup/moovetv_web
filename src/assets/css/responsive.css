@@ -8,6 +8,9 @@
     justify-content: space-between;
     padding: 20px 10px;
 }
+    .logo img{
+        width: 110px;
+    }
     .head-text h1 {
         font-family: Montserrat-Bold;
         font-size: 30px;
@@ -30,7 +33,7 @@
         border-radius: 30px;
         border: 1px solid #0774BB;
         font-family: Montserrat-Medium;
-        font-size: 12px;
+        font-size: 11px;
         color: #FFFFFF;
         letter-spacing: 0;
         padding: 10px 2em;
@@ -59,12 +62,12 @@
         background-color: #FFFFFF;
         border-radius: 20px;
         border: 1px solid #FFFFFF;
-        padding: 5px 25px;
-        font-size: 12px;
+        padding: 10px 12px;
+        font-size: 11px;
         font-family: Montserrat-Regular;
         color: #0774BB;
         font-weight: 600;
-        height: 34px;
+        height: 40px;
         margin-top: 2em;
         box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
     }
@@ -92,6 +95,103 @@
         padding-top: 5%;
         width: 70%;
     }
+    .advertisers-text2 h1 {
+        font-family: Montserrat-Medium;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding-bottom: 20px;
+    }
+    .advertisers-text2 p {
+        opacity: 0.8;
+        font-family: Montserrat-Regular;
+        font-size: 13px;
+        color: #E8E8E8;
+        letter-spacing: 0;
+        padding-bottom: 20px;
+    }
+    .advertisers-text2 {
+        transition: .2s ease-in-out all;
+        padding-top: 5%;
+        width: 100%;
+    }
+    .try-btn {
+        background: transparent;
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        font-family: Montserrat-Medium;
+        font-size: 11px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding: 10px 2em;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+    .browse-btn {
+        background: transparent;
+        border-radius: 30px;
+        border: 1px solid #0774BB;
+        font-family: Montserrat-Medium;
+        font-size: 11px;
+        color: #0774BB;
+        letter-spacing: 0;
+        padding: 10px 3em;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+    .recent_updates{
+        display: flex;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        padding: 1em 1rem;
+        margin-bottom: 2em;
+    }
+    .topic{
+        padding-left: 1rem;
+    }
+    .img1 img{
+        width: 150px;
+        height: 170px;
+    }
+    .nav-tabs .nav-item {
+        margin-bottom: -1px;
+        width: 25.5vw;
+    }
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        color: #fff;
+        font-size: 10px;
+    }
+    .footer{
+        border-top: 1px solid #222;
+        padding: 1em;
+    }
+    .fb{
+        width: 30px;
+        height: 30px;
+        padding: 9px;
+        color: #000000;
+        font-size: 10px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 50%;
+        opacity: 0.9;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+    .fb:hover{
+        opacity: 1;
+    }
 
 
 }
@@ -103,7 +203,7 @@
     border: none;
     border-radius: 25px;
     font-family: Montserrat-SemiBold;
-    font-size: 12px;
+    font-size: 11px;
     color: #FFFFFF;
     letter-spacing: 0;
     padding: 8px 2.5rem;
@@ -113,7 +213,7 @@
     border-radius: 30px;
     border: none;
     font-family: Montserrat-Medium;
-    font-size: 12px;
+    font-size: 11px;
     color: #FFFFFF;
     letter-spacing: 0;
     padding: 10px 3em;
@@ -129,7 +229,7 @@
     border-radius: 20px;
     border: 1px solid #FFFFFF;
     padding: 5px 25px;
-    font-size: 12px;
+    font-size: 11px;
     font-family: Montserrat-Regular;
     color: #0774BB;
     font-weight: 600;
@@ -157,7 +257,7 @@
 }
 .advertisers-text h1{
     font-family: Montserrat-Medium;
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;
     letter-spacing: 0;
     padding-bottom: 30px;
@@ -165,11 +265,33 @@
 .advertisers-text p{
     opacity: 0.8;
     font-family: Montserrat-Regular;
-    font-size: 16px;
+    font-size: 14px;
     color: #E8E8E8;
     letter-spacing: 0;
     padding-bottom: 30px;
 }
+
+    .advertisers-text2{
+        transition: .2s ease-in-out all;
+        padding-top: 10%;
+        width: 100%;
+    }
+    .advertisers-text2 h1{
+        font-family: Montserrat-Medium;
+        font-size: 25px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding-bottom: 30px;
+    }
+    .advertisers-text2 p{
+        opacity: 0.8;
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        color: #E8E8E8;
+        letter-spacing: 0;
+        padding-bottom: 30px;
+    }
+
 .modal-body {
     position: relative;
     -ms-flex: 1 1 auto;

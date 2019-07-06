@@ -9,6 +9,7 @@
 </template>
 
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet');
     @import "assets/css/bootstrap.css";
     @import "assets/css/moove-web.css";
     @import "assets/css/responsive.css";

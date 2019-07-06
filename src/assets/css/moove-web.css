@@ -21,8 +21,11 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-
+p, button{
+    font-family: 'Montserrat', sans-serif;
+}
 .onboarding-page {
     overflow-y: hidden;
     height: 100vh;
@@ -42,7 +45,7 @@ body{
     background-size:cover;
     background-position: center;
 }
-.nav{
+.nav-b{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -50,7 +53,7 @@ body{
 .logo2{
     padding: 2rem 0;
 }
-.form-input,select,textarea,button,.form-control,.input-field:focus,.input-field:active {
+.nav-tabs,.form-input,select,textarea,button,.form-control,.input-field:focus,.input-field:active {
     outline:0px !important;
     -webkit-appearance:none!important;
     border-color: transparent;
@@ -117,10 +120,10 @@ button:hover{
     border-radius: 30px;
     border: 1px solid #0774BB;
     font-family: Montserrat-Medium;
-    font-size: 16px;
+    font-size: 19px;
     color: #FFFFFF;
     letter-spacing: 0;
-    padding: 10px 2em;
+    padding: 10px 3em;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
@@ -130,6 +133,25 @@ button:hover{
     color: #0774BB;
     border: 1px solid #0774BB;
 }
+.try-btn{
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    font-family: Montserrat-Medium;
+    font-size: 19px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding: 10px 3em;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.try-btn:hover {
+    background: #0774BB;
+    color: #ffffff;
+    border: 1px solid #0774BB;
+}
+
 .bounce-1 {
     animation-name: bounce-1;
     animation-timing-function: linear;
@@ -151,16 +173,17 @@ button:hover{
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     background-color: #FFFFFF;
-    border-radius: 16px;
+    border-radius: 30px;
     border: 1px solid #FFFFFF;
-    padding: 5px 20px;
-    font-size: 15px;
+    padding: 10px 20px;
+    font-size: 19px;
     font-family: Montserrat-Regular;
     color: #0774BB;
     font-weight: 600;
-    height: 37px;
-    margin-top: 2em;
+    height: 50px;
+    margin-top: 1em;
     margin-right: 1em;
+    margin-left: 2em;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
 }
 .download-btn:hover {
@@ -253,6 +276,27 @@ button:hover{
     padding-bottom: 30px;
 }
 .advertisers-text p{
+    opacity: 0.8;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #E8E8E8;
+    letter-spacing: 0;
+    padding-bottom: 30px;
+}
+
+.advertisers-text2{
+    transition: .2s ease-in-out all;
+    padding-top: 6%;
+    width: 100%;
+}
+.advertisers-text2 h1{
+    font-family: Montserrat-Medium;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-bottom: 30px;
+}
+.advertisers-text2 p{
     opacity: 0.8;
     font-family: Montserrat-Regular;
     font-size: 20px;
@@ -424,3 +468,142 @@ button:hover{
         /*transform: scale3d(1, 1, 1);*/
     /*}*/
 /*}*/
+
+.recent_updates{
+    display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 1em 2rem;
+    margin-bottom: 2em;
+}
+.topic{
+    padding-left: 2rem;
+}
+.img1{
+    padding-right: 10px;
+}
+.img1 img{
+    width: 200px;
+    height: 220px;
+}
+.browse-btn{
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #0774BB;
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    color: #0774BB;
+    letter-spacing: 0;
+    padding: 10px 3em;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.browse-btn:hover {
+    background: #0774BB;
+    color: #ffffff;
+    border: 1px solid #0774BB;
+}
+.updates-text h2{
+    font-family: Montserrat-Medium;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+}
+.updates-text p{
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+}
+.bg-black{
+    background-color: #000000;
+}
+.b-tabs{
+    /*width: 33vw;*/
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 30vw;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 4px solid #0774BB !important;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-color: transparent;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #fff;
+    font-size: 15px;
+}
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: #0774BB;
+    border-bottom: 4px solid #ffffff;
+}
+.nav-tabs {
+    /* border-bottom: 1px solid #dee2e6; */
+}
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.footer{
+    border-top: 1px solid #222;
+    padding: 1.5em 2em;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.social_icon{
+    display: flex;
+}
+.fb{
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.9;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.fb:hover{
+    opacity: 1;
+}
+.social{
+    font-size: 18px;
+}
+.link-tab{
+    display: flex;
+}
+.links{
+     padding: 6px 8px;
+     text-decoration: none;
+     color: #ffffff;
+    font-size: 14px;
+     opacity: 0.9;
+     cursor: pointer;
+ }
+.links:hover{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+}
