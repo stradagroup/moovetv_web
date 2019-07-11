@@ -7,7 +7,7 @@
                 </div>
                 <div class="signin">
                     <!-- Modal for Content Partners starts -->
-                    <b-button v-b-modal.modal-1 class="signin-btn animated pulse">Sign In</b-button>
+                    <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
                     <b-modal id="modal-1" hide-footer>
                         <div class="text-center">
@@ -35,28 +35,22 @@
                     <div class="moove-flex">
                         <div class="space"></div>
                         <div class="head-text animated bounceInDown">
-                            <h1>Your One Stop Movie Store</h1>
-                            <p>GET STARTED WITH US AND ENJOY ALL OUR MULTI-CONTENT CHANNELS FOR FREE</p>
+                            <h1>Meet the First Multi-Content Free Streaming Platform</h1>
+                            <p>Feel the experience on multiple platforms: WEB | MOBILE | TAXI</p>
                             <div class="get-started ">
-                                <router-link to="/Moovetv"><button class="get-started-btn bounce-1">Get Started</button></router-link>
+                                <router-link to="/Moovetv"><button class="get-started-btn ">Get Started as a Content Partner</button></router-link>
                             </div>
                             <div class="get-started ">
-                                <router-link to="/Moovetv"><button class="try-btn animated bounce-1">Try for Free</button></router-link>
+                                <router-link to="/Moovetv"><button class="try-btn animated ">Start Consuming Contents For Free</button></router-link>
                             </div>
                         </div>
                         <div class="icons animated bounceInUp">
-                            <router-link to="Moovetv" class="home_icons">
-                                <font-awesome-icon icon="tablet-alt" class="fontawesom"/>
-                                <p>Advertisers</p>
-                            </router-link>
-                            <router-link to="Moovetv" class="home_icons">
-                                <font-awesome-icon icon="car" class="fontawesom"/>
-                                <p>Driver</p>
-                            </router-link>
-                            <router-link to="Moovetv" class="home_icons">
-                                <font-awesome-icon icon="desktop" class="fontawesom"/>
-                                <p>Content Partners</p>
-                            </router-link>
+                            <!--<font-awesome-icon icon="angle-down" class="social"/>-->
+                            <div class="text-center">
+                                <a href="#updates" class="home_icons bounce-1">
+                                    <font-awesome-icon icon="angle-down" class="fontawesom bounce-1 angledown"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,8 +59,8 @@
         <div class="body-section" id="updates">
             <div class="updates-section bg-white pt-5 pb-5">
                 <div class="text-center container updates-text">
-                    <h2 class="">Updates on MooveTV</h2>
-                    <p>Local & International series, hit movies, popular kids’ shows on any screen you like.</p>
+                    <h2 class="">What MooveTV Does Differently</h2>
+                    <p>We serve you a plethora of contents on multiple content  categories: Movies, Music, Podcasts, Ebooks, Radio, LiveTV, etc.</p>
                 </div>
                 <div class="topic">
                     <h3>Trending</h3>
@@ -171,7 +165,7 @@
                 </div>
 
                 <div class="get-started ">
-                    <router-link to=""><button class="browse-btn bounce-1">Browse Catalogue</button></router-link>
+                    <router-link to=""><button class="browse-btn ">Browse Catalogue</button></router-link>
                 </div>
             </div>
             <div class="category-section bg-black pt-5 pb-5" id="">
@@ -195,8 +189,8 @@
                                         </div>
                                         <!-- Modal for Advertisers starts -->
                                         <div class="  ">
-                                            <b-button v-b-modal.modal-2 class="get-started-btn bounce-1">Advertise with us</b-button>
-                                            <button class="download-btn  bounce-1">Download Advertiser Starter Kit</button>
+                                            <b-button v-b-modal.modal-2 class="get-started-btn ">Advertise with us</b-button>
+                                            <button class="download-btn ">Download Advertiser Starter Kit</button>
                                             <b-modal id="modal-2" hide-footer>
                                                 <div class="text-center">
                                                     <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
@@ -230,6 +224,7 @@
                                         </div>
                                         <!-- Modal for Advertisers ends -->
                                     </div>
+
                                 </div>
                             </b-tab>
                             <b-tab title="Drivers" class="b-tabs">
@@ -246,8 +241,8 @@
                                         </div>
                                         <!-- Modal for Drivers starts -->
                                         <div class="">
-                                            <b-button v-b-modal.modal-3 class="get-started-btn bounce-1">Signup as a Driver</b-button>
-                                            <button class="download-btn  bounce-1">Download Driver Starter Kit</button>
+                                            <b-button v-b-modal.modal-3 class="get-started-btn ">Signup as a Driver</b-button>
+                                            <button class="download-btn ">Download Driver Starter Kit</button>
                                             <b-modal id="modal-3" hide-footer>
                                                 <div class="text-center">
                                                     <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
@@ -297,8 +292,8 @@
                                         </div>
                                         <!-- Modal for Content Partners starts -->
                                         <div class=" ">
-                                            <b-button v-b-modal.modal-4 class="get-started-btn bounce-1">Get Started Now</b-button>
-                                            <button class="download-btn bounce-1">Download C. Partner Starter Kit</button>
+                                            <b-button v-b-modal.modal-4 class="get-started-btn ">Get Started Now</b-button>
+                                            <button class="download-btn ">Download C. Partner Starter Kit</button>
                                             <b-modal id="modal-4" hide-footer>
                                                 <div class="text-center">
                                                     <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
@@ -343,15 +338,12 @@
                 <div class="foot">
                     <div class="social_icon">
                         <div class="fb">
-                            <!--<font-awesome-icon icon="facebook" class="social"/>-->
                             <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" class="social"/>
                         </div>
                         <div class="fb">
-                            <!--<font-awesome-icon icon="twitter" class="social"/>-->
                             <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" class="social"/>
                         </div>
                         <div class="fb">
-                            <!--<font-awesome-icon icon="instagram" class="social"/>-->
                             <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" class="social"/>
                         </div>
                     </div>

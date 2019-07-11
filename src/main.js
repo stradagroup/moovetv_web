@@ -8,7 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 // import vue-jquery from 'vue-jquery'
 import VueTaber from 'vue-tabs'
 // import VueTabs from 'vue-nav-tabs'
@@ -34,7 +34,7 @@ ApiService.init('https://ivoholdings.com/api/v1');
 //     store.dispatch('UNSET_USER').then(() => {
 //     });
 
-library.add(faUserSecret, faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt, faFacebookF, faTwitter, faInstagram)
+library.add(faUserSecret, faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt, faFacebookF, faTwitter, faInstagram, faAngleDown)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false;

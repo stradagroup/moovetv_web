@@ -29,7 +29,7 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn animated pulse">Download Advertiser Starter Kit</button>
+                                <button class="download-btn2 ">Download Advertiser Starter Kit</button>
                             </div>
                             <div class="advertisers-text animated bounceInLeft">
 
@@ -42,7 +42,7 @@
                         </div>
                         <!-- Modal for Advertisers starts -->
                         <div class=" container ">
-                                <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Advertise with us</b-button>
+                                <b-button v-b-modal.modal-1 class="get-started-btn ">Advertise with us</b-button>
 
                                 <b-modal id="modal-1" hide-footer>
                                     <div class="text-center">
@@ -84,7 +84,7 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn animated pulse">Download Driver Starter Kit</button>
+                                <button class="download-btn2  ">Download Driver Starter Kit</button>
                             </div>
                             <div class="advertisers-text animated bounceInRight">
                                 <h1>You Can Earn Extra Cash Just By Doing What You Love...</h1>
@@ -96,7 +96,7 @@
                         </div>
                         <!-- Modal for Drivers starts -->
                         <div class="container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Signup as a Driver</b-button>
+                            <b-button v-b-modal.modal-1 class="get-started-btn ">Signup as a Driver</b-button>
 
                             <b-modal id="modal-1" hide-footer>
                                 <div class="text-center">
@@ -139,7 +139,7 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn pulse">Download Content Partner Starter Kit</button>
+                                <button class="download-btn2 ">Download Content Partner Starter Kit</button>
                             </div>
                             <div class="advertisers-text animated bounceInDown">
                                 <h1>Get Your Contents Monetized Faster Than You Can Imagine</h1>
@@ -150,7 +150,7 @@
                         </div>
                         <!-- Modal for Content Partners starts -->
                         <div class=" container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Get Started Now</b-button>
+                            <b-button v-b-modal.modal-1 class="get-started-btn ">Get Started Now</b-button>
 
                             <b-modal id="modal-1" hide-footer>
                                 <div class="text-center">
