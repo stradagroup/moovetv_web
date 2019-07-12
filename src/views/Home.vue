@@ -41,13 +41,13 @@
                                 <router-link to="/Moovetv"><button class="get-started-btn ">Get Started as a Content Partner</button></router-link>
                             </div>
                             <div class="get-started ">
-                                <router-link to="/Moovetv"><button class="try-btn animated ">Start Consuming Contents For Free</button></router-link>
+                                <router-link to=""><button class="try-btn animated ">Start Consuming Contents For Free</button></router-link>
                             </div>
                         </div>
                         <div class="icons animated bounceInUp">
                             <!--<font-awesome-icon icon="angle-down" class="social"/>-->
                             <div class="text-center">
-                                <a href="#updates" class="home_icons bounce-1">
+                                <a href="#main-content" class="home_icons bounce-1">
                                     <font-awesome-icon icon="angle-down" class="fontawesom bounce-1 angledown"/>
                                 </a>
                             </div>
@@ -56,8 +56,176 @@
                 </div>
             </div>
         </div>
+
+        <div class="category-section bg-black pt-5 pb-5" id="main-content">
+            <div class="container-fluid">
+                <div class="text-center">
+                    <b-tabs content-class="mt-3" align="center" class="b-tabs-head">
+
+                        <b-tab title="Advertisers" active class="b-tabs">
+
+                            <div class="container">
+                                <div id="advertisers1" class="tabcontent" >
+                                    <div class="">
+                                        <div class="advertisers-text2 container animated fadeInLeft">
+
+                                            <h1>Get Your Business In Front of Millions of Taxi Commuters</h1>
+                                            <p>With MooveTV you can boost brand awareness while taxi passengers are being entertained while in transit. Adverts are placed in between thousands of content directions such as news, sports, music, lifestyle etc.</p>
+                                            <div class="advertise-now">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- Modal for Advertisers starts -->
+                                    <div class="  ">
+                                        <b-button v-b-modal.modal-2 class="get-started-btn ">Advertise with us</b-button>
+                                        <button class="download-btn ">Download Advertiser Starter Kit</button>
+                                        <b-modal id="modal-2" hide-footer>
+                                            <div class="text-center">
+                                                <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
+                                            </div>
+                                            <form class="click-animations">
+                                                <div class="modal-body text-center">
+                                                    <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Company's Name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Company's Website">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-input" id="email" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group " style="display: inline-flex; width: 100%;">
+                                                        <div class="flag">
+                                                            <img src="../assets/images/flag.svg" class="flag-icon ">
+                                                        </div>
+                                                        <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-input" id="password" placeholder="Password">
+                                                    </div>
+                                                    <button type="submit" class="btn-continue ">Continue</button>
+                                                </div>
+                                                <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
+                                            </form>
+                                        </b-modal>
+                                    </div>
+                                    <!-- Modal for Advertisers ends -->
+                                </div>
+
+                            </div>
+                        </b-tab>
+                        <b-tab title="Drivers" class="b-tabs">
+                            <div class="container">
+                                <div id="drivers1" class="tabcontent" >
+                                    <div class="">
+                                        <div class="advertisers-text2 animated fadeInLeft">
+                                            <h1>You Can Earn Extra Cash Just By Doing What You Love...</h1>
+                                            <p>With MooveTV, the more you drive, the more you earn. Your riders have access to a catalog of TV shows, games, audio content and more while they commute giving them a more enjoyable experience.</p>
+                                            <div class="advertise-now">
+                                                <!-- <button class="get-started-btn bounce-1">Signup as a Driver</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal for Drivers starts -->
+                                    <div class="">
+                                        <b-button v-b-modal.modal-3 class="get-started-btn ">Signup as a Driver</b-button>
+                                        <button class="download-btn ">Download Driver Starter Kit</button>
+                                        <b-modal id="modal-3" hide-footer>
+                                            <div class="text-center">
+                                                <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
+                                            </div>
+                                            <form class="click-animations">
+                                                <div class="modal-body text-center">
+                                                    <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Full Name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Plate Number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-input" id="email" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group " style="display: inline-flex; width: 100%;">
+                                                        <div class="flag">
+                                                            <img src="../assets/images/flag.svg" class="flag-icon ">
+                                                        </div>
+                                                        <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-input" id="password" placeholder="Password">
+                                                    </div>
+                                                    <button type="submit" class="btn-continue ">Continue</button>
+                                                </div>
+                                                <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
+                                            </form>
+                                        </b-modal>
+                                    </div>
+
+                                    <!-- Modal for Drivers ends -->
+                                </div>
+                            </div>
+                        </b-tab>
+                        <b-tab title="Content Partners" class="b-tabs">
+                            <div class="container">
+                                <div id="partners1" class="tabcontent" >
+                                    <div class="">
+                                        <div class="advertisers-text2 animated fadeInLeft">
+                                            <h1>Get Your Contents Monetized Faster Than You Can Imagine</h1>
+                                            <p>With our interactive touch-screens, riders can browse a carefully curated selection of contents like movies, movie trailers, trending news, short skits, music, podcast and ebooks. Our content owners earn as passengers benefit from contents.</p>
+                                            <div class="advertise-now">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal for Content Partners starts -->
+                                    <div class=" ">
+                                        <b-button v-b-modal.modal-4 class="get-started-btn ">Get Started Now</b-button>
+                                        <button class="download-btn ">Download C. Partner Starter Kit</button>
+                                        <b-modal id="modal-4" hide-footer>
+                                            <div class="text-center">
+                                                <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
+                                            </div>
+                                            <form class="click-animations">
+                                                <div class="modal-body text-center">
+                                                    <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Full Name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-input" id="text" placeholder="Company's Website">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-input" id="email" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group " style="display: inline-flex; width: 100%;">
+                                                        <div class="flag">
+                                                            <img src="../assets/images/flag.svg" class="flag-icon ">
+                                                        </div>
+                                                        <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-input" id="password" placeholder="Password">
+                                                    </div>
+                                                    <button type="submit" class="btn-continue ">Continue</button>
+                                                </div>
+                                                <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
+                                            </form>
+                                        </b-modal>
+                                    </div>
+
+                                    <!-- Modal for Content Partners ends -->
+                                </div>
+                            </div>
+                        </b-tab>
+                    </b-tabs>
+                </div>
+            </div>
+        </div>
+
         <div class="body-section" id="updates">
-            <div class="updates-section bg-white pt-5 pb-5">
+            <div class="updates-section bg-white pt-5 pb-5 animated fadeInUp">
                 <div class="text-center container updates-text">
                     <h2 class="">What MooveTV Does Differently</h2>
                     <p>We serve you a plethora of contents on multiple content  categories: Movies, Music, Podcasts, Ebooks, Radio, LiveTV, etc.</p>
@@ -65,7 +233,7 @@
                 <div class="topic">
                     <h3>Trending</h3>
                 </div>
-                <div class="recent_updates">
+                <div class="recent_updates animated fadeInLeft">
                     <div class="img1">
                         <img src="../assets/images/big-brother-naija.jpg">
                     </div>
@@ -168,172 +336,7 @@
                     <router-link to=""><button class="browse-btn ">Browse Catalogue</button></router-link>
                 </div>
             </div>
-            <div class="category-section bg-black pt-5 pb-5" id="">
-                <div class="container-fluid">
-                    <div class="text-center">
-                        <b-tabs content-class="mt-3" align="center" class="b-tabs-head">
 
-                            <b-tab title="Advertisers" active class="b-tabs">
-
-                                <div class="container">
-                                    <div id="advertisers1" class="tabcontent" >
-                                        <div class="">
-                                            <div class="advertisers-text2 container animated bounceInLeft">
-
-                                                <h1>Get Your Business In Front of Millions of Taxi Commuters</h1>
-                                                <p>With MooveTV you can boost brand awareness while taxi passengers are being entertained while in transit. Adverts are placed in between thousands of content directions such as news, sports, music, lifestyle etc.</p>
-                                                <div class="advertise-now">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- Modal for Advertisers starts -->
-                                        <div class="  ">
-                                            <b-button v-b-modal.modal-2 class="get-started-btn ">Advertise with us</b-button>
-                                            <button class="download-btn ">Download Advertiser Starter Kit</button>
-                                            <b-modal id="modal-2" hide-footer>
-                                                <div class="text-center">
-                                                    <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
-                                                </div>
-                                                <form class="click-animations">
-                                                    <div class="modal-body text-center">
-                                                        <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Company's Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Company's Website">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="email" class="form-input" id="email" placeholder="Email">
-                                                        </div>
-                                                        <div class="form-group " style="display: inline-flex; width: 100%;">
-                                                            <div class="flag">
-                                                                <img src="../assets/images/flag.svg" class="flag-icon ">
-                                                            </div>
-                                                            <input type="text" class="form-input" id="text" placeholder="Phone Number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-input" id="password" placeholder="Password">
-                                                        </div>
-                                                        <button type="submit" class="btn-continue ">Continue</button>
-                                                    </div>
-                                                    <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
-                                                </form>
-                                            </b-modal>
-                                        </div>
-                                        <!-- Modal for Advertisers ends -->
-                                    </div>
-
-                                </div>
-                            </b-tab>
-                            <b-tab title="Drivers" class="b-tabs">
-                                <div class="container">
-                                    <div id="drivers1" class="tabcontent" >
-                                        <div class="">
-                                            <div class="advertisers-text2 animated bounceInRight">
-                                                <h1>You Can Earn Extra Cash Just By Doing What You Love...</h1>
-                                                <p>With MooveTV, the more you drive, the more you earn. Your riders have access to a catalog of TV shows, games, audio content and more while they commute giving them a more enjoyable experience.</p>
-                                                <div class="advertise-now">
-                                                    <!-- <button class="get-started-btn bounce-1">Signup as a Driver</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Modal for Drivers starts -->
-                                        <div class="">
-                                            <b-button v-b-modal.modal-3 class="get-started-btn ">Signup as a Driver</b-button>
-                                            <button class="download-btn ">Download Driver Starter Kit</button>
-                                            <b-modal id="modal-3" hide-footer>
-                                                <div class="text-center">
-                                                    <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
-                                                </div>
-                                                <form class="click-animations">
-                                                    <div class="modal-body text-center">
-                                                        <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Full Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Plate Number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="email" class="form-input" id="email" placeholder="Email">
-                                                        </div>
-                                                        <div class="form-group " style="display: inline-flex; width: 100%;">
-                                                            <div class="flag">
-                                                                <img src="../assets/images/flag.svg" class="flag-icon ">
-                                                            </div>
-                                                            <input type="text" class="form-input" id="text" placeholder="Phone Number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-input" id="password" placeholder="Password">
-                                                        </div>
-                                                        <button type="submit" class="btn-continue ">Continue</button>
-                                                    </div>
-                                                    <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
-                                                </form>
-                                            </b-modal>
-                                        </div>
-
-                                        <!-- Modal for Drivers ends -->
-                                    </div>
-                                </div>
-                            </b-tab>
-                            <b-tab title="Content Partners" class="b-tabs">
-                                <div class="container">
-                                    <div id="partners1" class="tabcontent" >
-                                        <div class="">
-                                            <div class="advertisers-text2 animated bounceInDown">
-                                                <h1>Get Your Contents Monetized Faster Than You Can Imagine</h1>
-                                                <p>With our interactive touch-screens, riders can browse a carefully curated selection of contents like movies, movie trailers, trending news, short skits, music, podcast and ebooks. Our content owners earn as passengers benefit from contents.</p>
-                                                <div class="advertise-now">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Modal for Content Partners starts -->
-                                        <div class=" ">
-                                            <b-button v-b-modal.modal-4 class="get-started-btn ">Get Started Now</b-button>
-                                            <button class="download-btn ">Download C. Partner Starter Kit</button>
-                                            <b-modal id="modal-4" hide-footer>
-                                                <div class="text-center">
-                                                    <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
-                                                </div>
-                                                <form class="click-animations">
-                                                    <div class="modal-body text-center">
-                                                        <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Full Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-input" id="text" placeholder="Company's Website">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="email" class="form-input" id="email" placeholder="Email">
-                                                        </div>
-                                                        <div class="form-group " style="display: inline-flex; width: 100%;">
-                                                            <div class="flag">
-                                                                <img src="../assets/images/flag.svg" class="flag-icon ">
-                                                            </div>
-                                                            <input type="text" class="form-input" id="text" placeholder="Phone Number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-input" id="password" placeholder="Password">
-                                                        </div>
-                                                        <button type="submit" class="btn-continue ">Continue</button>
-                                                    </div>
-                                                    <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
-                                                </form>
-                                            </b-modal>
-                                        </div>
-
-                                        <!-- Modal for Content Partners ends -->
-                                    </div>
-                                </div>
-                            </b-tab>
-                        </b-tabs>
-                    </div>
-                </div>
-            </div>
             <footer class="footer bg-black ">
                 <div class="foot">
                     <div class="social_icon">
