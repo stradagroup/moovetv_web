@@ -22,6 +22,9 @@ import BootstrapVue from 'bootstrap-vue'
 //     tabs
 // })
 import axios from 'axios'
+import VueToastr2 from 'vue-toastr-2';
+import 'vue-toastr-2/dist/vue-toastr-2.min.css'
+window.toastr = require('toastr');
 
 Vue.prototype.$http = axios
 // windows.axios=axios
@@ -40,6 +43,10 @@ Vue.config.productionTip = false;
 Vue.use(VModal, VueTaber, VueTabs);
 Vue.use(BootstrapVue);
 Vue.use(Vuex);
+
+Vue.use(VueToastr2);
+
+
 // Vue.use(vue-jquery);
 // window.$ = require('jquery')
 // window.JQuery = require('jquery')

@@ -1,7 +1,6 @@
 <template>
     <div class="advertisers-page">
 
-
         <div class="row">
             <div class="col-md-1 col-sm-2">
                 <div class="left-nav">
@@ -42,9 +41,11 @@
                         </div>
                         <!-- Modal for Advertisers starts -->
                         <div class=" container ">
-                                <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Advertise with us</b-button>
+                                <b-button v-b-modal.modal-adv class="get-started-btn bounce-1">Advertise with us</b-button>
 
-                                <b-modal id="modal-1" hide-footer>
+                                <b-modal id="modal-adv" hide-footer @submit.prevent="advertiser">
+                                    <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
+
                                     <div class="text-center">
                                         <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
                                     </div>
@@ -52,26 +53,26 @@
                                         <div class="modal-body text-center">
                                             <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
                                             <div class="form-group">
-                                                <input type="text" class="form-input" id="text" placeholder="Company's Name">
+                                                <input type="text" class="form-input" v-model="adv_company_name" placeholder="Company's Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-input" id="text" placeholder="Company's Website">
+                                                <input type="text" class="form-input"  v-model="adv_company_website" placeholder="Company's Website">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-input" id="email" placeholder="Email">
+                                                <input type="email" class="form-input"  v-model="adv_company_email" placeholder="Email">
                                             </div>
                                             <div class="form-group " style="display: inline-flex; width: 100%;">
                                                 <div class="flag">
                                                     <img src="../assets/images/flag.svg" class="flag-icon ">
                                                 </div>
-                                                <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                                <input type="text" class="form-input" v-model="adv_company_phone" placeholder="Phone Number">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-input" id="password" placeholder="Password">
+                                                <input type="password" class="form-input" v-model="adv_company_password" placeholder="Password">
                                             </div>
-                                            <button type="submit" class="btn-continue ">Continue</button>
+                                            <button type="submit" class="btn-continue " @click.prevent="advertiser">Continue</button>
                                         </div>
-                                        <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
+                                        <small  class="form-text text-muted text-center">Ads on this platform are paid for.</small>
                                     </form>
                                 </b-modal>
                         </div>
@@ -99,33 +100,35 @@
                             <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Signup as a Driver</b-button>
 
                             <b-modal id="modal-1" hide-footer>
+                                <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
+
                                 <div class="text-center">
                                     <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
                                 </div>
-                                <form class="click-animations">
+                                <form class="click-animations"  @submit.prevent="driver">
                                     <div class="modal-body text-center">
                                         <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
                                         <div class="form-group">
-                                            <input type="text" class="form-input" id="text" placeholder="Full Name">
+                                            <input type="text" class="form-input" v-model="driver_full_nmae"  placeholder="Full Name">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-input" id="text" placeholder="Plate Number">
+                                            <input type="text" class="form-input" v-model="plate_number"  placeholder="Plate Number">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-input" id="email" placeholder="Email">
+                                            <input type="email" class="form-input" v-model="driver_email" placeholder="Email">
                                         </div>
                                         <div class="form-group " style="display: inline-flex; width: 100%;">
                                             <div class="flag">
                                                 <img src="../assets/images/flag.svg" class="flag-icon ">
                                             </div>
-                                            <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                            <input type="text" class="form-input" v-model="driver_phone"  placeholder="Phone Number">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-input" id="password" placeholder="Password">
+                                            <input type="password" class="form-input" v-model="driver_password" placeholder="Password">
                                         </div>
-                                        <button type="submit" class="btn-continue ">Continue</button>
+                                        <button type="submit" class="btn-continue " @click.prevent="driver">Continue</button>
                                     </div>
-                                    <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
+                                    <small  class="form-text text-muted text-center">Ads on this platform are paid for.</small>
                                 </form>
                             </b-modal>
                         </div>
@@ -153,31 +156,33 @@
                             <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Get Started Now</b-button>
 
                             <b-modal id="modal-1" hide-footer>
+                                <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
+
                                 <div class="text-center">
                                     <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
                                 </div>
-                                <form class="click-animations">
+                                <form class="click-animations"  @submit.prevent="partner">
                                     <div class="modal-body text-center">
                                         <p class="moove-modal-text">Advertise with MooveTV <br>Sign Up</p>
                                         <div class="form-group">
-                                            <input type="text" class="form-input" id="text" placeholder="Full Name">
+                                            <input type="text" class="form-input" v-model="partner_full_name" placeholder="Full Name">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-input" id="text" placeholder="Company's Website">
+                                            <input type="text" class="form-input" v-model="partner_website" placeholder="Company's Website">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-input" id="email" placeholder="Email">
+                                            <input type="email" class="form-input"  v-model="partner_email" id="email" placeholder="Email">
                                         </div>
                                         <div class="form-group " style="display: inline-flex; width: 100%;">
                                             <div class="flag">
                                                 <img src="../assets/images/flag.svg" class="flag-icon ">
                                             </div>
-                                            <input type="text" class="form-input" id="text" placeholder="Phone Number">
+                                            <input type="text" class="form-input"  v-model="partner_phone" placeholder="Phone Number">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-input" id="password" placeholder="Password">
+                                            <input type="password" class="form-input"  v-model="partner_password" id="password" placeholder="Password">
                                         </div>
-                                        <button type="submit" class="btn-continue ">Continue</button>
+                                        <button type="submit" class="btn-continue " @click.prevent="partner">Continue</button>
                                     </div>
                                     <small id="emailHelp" class="form-text text-muted text-center">Ads on this platform are paid for.</small>
                                 </form>
@@ -194,16 +199,92 @@
 
 <script>
     // import {b-button, b-modal} from 'vue-nav-tabs'
+    import {userService} from '../services/user.service';
+    import Loader from "../components/Loader/Loader";
+
 
     export default {
         name: 'home',
         components: {
             // b-button,
-            // b-modal
+            // b-modal,
+            Loader
         },
         data() {
             return  {
                 tab: 'advertisers',
+                adv_company_name: '',
+                adv_company_website: '',
+                adv_company_email: '',
+                adv_company_phone: '',
+                adv_company_password: '',
+                driver_full_nmae: '',
+                plate_number: '',
+                driver_email: '',
+                driver_phone: '',
+                driver_password: '',
+                partner_full_name: '',
+                partner_website: '',
+                partner_email: '',
+                partner_phone: '',
+                partner_password: '',
+                LoadingText: "Loading",
+                loading: false,
+            }
+        },
+        methods: {
+            advertiser(){
+                let data = {
+                    name: this.adv_company_name,
+                    website: this.adv_company_website,
+                    phone: this.adv_company_phone,
+                    email: this.adv_company_email,
+                    password: this.adv_company_password,
+                    type: 3
+
+                };
+                this.submitData(data);
+            },
+            driver(){
+                let data = {
+                    name: this.driver_full_nmae,
+                    plate_number: this.plate_number,
+                    phone: this.driver_phone,
+                    email: this.driver_email,
+                    password: this.driver_password,
+                    type: 4
+                };
+                this.submitData(data);
+            },
+            partner(){
+                let data = {
+                    name: this.partner_full_name,
+                    website: this.partner_website,
+                    phone: this.partner_phone,
+                    email: this.partner_email,
+                    password: this.partner_password,
+                    type: 2
+                };
+                this.submitData(data);
+            },
+
+            async submitData(data){
+                this.loading = true;
+                let that = this;
+                await userService.register(data).then((res) => {
+                    console.log(res);
+                    that.loading = false;
+                    that.contentTypes = res;
+                    this.$toastr.success("Registration Successful!", {timeOut: 5000});
+                    // this.fetchContent('All');
+                }).catch((error) => {
+                    console.log(error.error);
+                    error.message.forEach((d) => {
+                        this.$toastr.error(d, "Login Failed!", {timeOut: 5000});
+                    });
+
+                    this.loading = false;
+                });
             }
         }
     }
