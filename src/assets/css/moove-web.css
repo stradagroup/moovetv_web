@@ -647,3 +647,8 @@ button:hover{
     color: #ffffff;
     opacity: 1;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

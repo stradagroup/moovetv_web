@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="category-section bg-black pt-5 pb-5" id="main-content">
+        <div class="category-section categorysection bg-black pt-5 pb-5" id="main-content">
             <div class="container-fluid">
                 <div class="text-center">
                     <b-tabs content-class="mt-3" align="center" class="b-tabs-head">
@@ -409,5 +409,7 @@ export default {
         }
     }
 }
+
+
 
 </script>
