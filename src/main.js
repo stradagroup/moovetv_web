@@ -7,7 +7,8 @@ import VModal from 'vue-js-modal'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 // import vue-jquery from 'vue-jquery'
 import VueTaber from 'vue-tabs'
 // import VueTabs from 'vue-nav-tabs'
@@ -36,7 +37,7 @@ ApiService.init('https://ivoholdings.com/api/v1');
 //     store.dispatch('UNSET_USER').then(() => {
 //     });
 
-library.add(faUserSecret, faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt)
+library.add(faUserSecret, faSpinner, faAlignLeft, faCar, faDesktop, faTabletAlt, faFacebookF, faTwitter, faInstagram, faAngleDown)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false;
@@ -50,6 +51,7 @@ Vue.use(VueToastr2);
 // Vue.use(vue-jquery);
 // window.$ = require('jquery')
 // window.JQuery = require('jquery')
+require('typeface-montserrat')
 
 new Vue({
   router,

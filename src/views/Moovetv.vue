@@ -28,7 +28,7 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn animated pulse">Download Advertiser Starter Kit</button>
+                                <button class="download-btn2 ">Download Advertiser Starter Kit</button>
                             </div>
                             <div class="advertisers-text animated bounceInLeft">
 
@@ -45,6 +45,7 @@
 
                                 <b-modal id="modal-adv" hide-footer @submit.prevent="advertiser">
                                     <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
+
 
                                     <div class="text-center">
                                         <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
@@ -85,9 +86,9 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn animated pulse">Download Driver Starter Kit</button>
+                                <button class="download-btn2  ">Download Driver Starter Kit</button>
                             </div>
-                            <div class="advertisers-text animated bounceInRight">
+                            <div class="advertisers-text animated bounceInLeft">
                                 <h1>You Can Earn Extra Cash Just By Doing What You Love...</h1>
                                 <p>With MooveTV, the more you drive, the more you earn. Your riders have access to a catalog of TV shows, games, audio content and more while they commute giving them a more enjoyable experience.</p>
                                 <div class="advertise-now">
@@ -97,7 +98,7 @@
                         </div>
                         <!-- Modal for Drivers starts -->
                         <div class="container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Signup as a Driver</b-button>
+                            <b-button v-b-modal.modal-1 class="get-started-btn ">Signup as a Driver</b-button>
 
                             <b-modal id="modal-1" hide-footer>
                                 <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
@@ -142,9 +143,9 @@
                                 <div class="logo2">
                                     <router-link to="/"><img src="../assets/images/moovetv-logo.svg"></router-link>
                                 </div>
-                                <button class="download-btn pulse">Download Content Partner Starter Kit</button>
+                                <button class="download-btn2 ">Download Content Partner Starter Kit</button>
                             </div>
-                            <div class="advertisers-text animated bounceInDown">
+                            <div class="advertisers-text animated bounceInLeft">
                                 <h1>Get Your Contents Monetized Faster Than You Can Imagine</h1>
                                 <p>With our interactive touch-screens, riders can browse a carefully curated selection of contents like movies, movie trailers, trending news, short skits, music, podcast and ebooks. Our content owners earn as passengers benefit from contents.</p>
                                 <div class="advertise-now">
@@ -153,7 +154,7 @@
                         </div>
                         <!-- Modal for Content Partners starts -->
                         <div class=" container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn bounce-1">Get Started Now</b-button>
+                            <b-button v-b-modal.modal-1 class="get-started-btn ">Get Started Now</b-button>
 
                             <b-modal id="modal-1" hide-footer>
                                 <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
@@ -210,7 +211,7 @@
             // b-modal,
             Loader
         },
-        data() {
+        data: function() {
             return  {
                 tab: 'advertisers',
                 adv_company_name: '',

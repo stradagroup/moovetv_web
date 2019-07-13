@@ -29,6 +29,7 @@ export default new Router({
 
         }
     },
+
       // {
       //     path: '/components',
       //     name: 'Testjs',
@@ -39,5 +40,6 @@ export default new Router({
       //     }
       // },
 
-  ]
+  ],
+    mode:'history'
 })
