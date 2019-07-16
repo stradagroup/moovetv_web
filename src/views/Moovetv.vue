@@ -41,7 +41,9 @@
                         </div>
                         <!-- Modal for Advertisers starts -->
                         <div class=" container ">
-                                <b-button v-b-modal.modal-adv class="get-started-btn bounce-1">Advertise with us</b-button>
+                                <b-button v-b-modal.modal-adv class="get-started-btn ">Advertise with us</b-button>
+                                <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
+
 
                                 <b-modal id="modal-adv" hide-footer @submit.prevent="advertiser">
                                     <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
@@ -76,6 +78,26 @@
                                         <small  class="form-text text-muted text-center">Ads on this platform are paid for.</small>
                                     </form>
                                 </b-modal>
+
+                            <b-modal id="modal-1" hide-footer>
+                                <div class="text-center">
+                                    <img src="../assets/images/moovetv-blue.svg" class="ad-icon">
+                                </div>
+                                <form class="click-animations" @submit.prevent="Login">
+                                    <div class="modal-body text-center">
+                                        <p class="moove-modal-text">Sign In to access MooveTV</p>
+                                        <div class="form-group" for="inputEmail">
+                                            <input v-model="email" type="email" id="email" class="form-input" placeholder="Email" required autofocus>
+                                        </div>
+                                        <div class="form-group" for="inputPassword">
+                                            <input v-model="password" type="password" id="password" class="form-input" placeholder="Password" required>
+                                        </div>
+                                        <button type="submit" class="btn-continue ">Continue</button>
+                                    </div>
+                                    <small id="emailHelp" class="form-text text-muted text-center">If you don't have an account please Signup</small>
+                                </form>
+                            </b-modal>
+                            <!-- Modal for sign in ends -->
                         </div>
                         <!-- Modal for Advertisers ends -->
                     </div>
@@ -98,9 +120,10 @@
                         </div>
                         <!-- Modal for Drivers starts -->
                         <div class="container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn ">Signup as a Driver</b-button>
+                            <b-button v-b-modal.modal-drv class="get-started-btn ">Signup as a Driver</b-button>
+                            <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
-                            <b-modal id="modal-1" hide-footer>
+                            <b-modal id="modal-drv" hide-footer>
                                 <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
 
                                 <div class="text-center">
@@ -154,9 +177,10 @@
                         </div>
                         <!-- Modal for Content Partners starts -->
                         <div class=" container">
-                            <b-button v-b-modal.modal-1 class="get-started-btn ">Get Started Now</b-button>
+                            <b-button v-b-modal.modal-ptn class="get-started-btn ">Get Started Now</b-button>
+                            <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
-                            <b-modal id="modal-1" hide-footer>
+                            <b-modal id="modal-ptn" hide-footer>
                                 <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
 
                                 <div class="text-center">

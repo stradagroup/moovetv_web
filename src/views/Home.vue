@@ -78,7 +78,8 @@
                                     </div>
                                     <!-- Modal for Advertisers starts -->
                                     <div class="  ">
-                                        <b-button v-b-modal.modal-adv class="get-started-btn bounce-1">Advertise with us</b-button>
+                                        <b-button v-b-modal.modal-adv class="get-started-btn ">Advertise with us</b-button>
+                                        <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
                                         <b-modal id="modal-adv" hide-footer @submit.prevent="advertiser">
                                             <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
@@ -133,9 +134,10 @@
                                     </div>
                                     <!-- Modal for Drivers starts -->
                                     <div class="">
-                                        <b-button v-b-modal.modal-1 class="get-started-btn ">Signup as a Driver</b-button>
+                                        <b-button v-b-modal.modal-drv class="get-started-btn ">Signup as a Driver</b-button>
+                                        <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
-                                        <b-modal id="modal-1" hide-footer>
+                                        <b-modal id="modal-drv" hide-footer>
                                             <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
 
                                             <div class="text-center">
@@ -186,9 +188,10 @@
                                     </div>
                                     <!-- Modal for Content Partners starts -->
                                     <div class=" ">
-                                        <b-button v-b-modal.modal-1 class="get-started-btn ">Get Started Now</b-button>
+                                        <b-button v-b-modal.modal-ptn class="get-started-btn ">Get Started Now</b-button>
+                                        <b-button v-b-modal.modal-1 class="signin-btn ">Sign In</b-button>
 
-                                        <b-modal id="modal-1" hide-footer>
+                                        <b-modal id="modal-ptn" hide-footer>
                                             <Loader :loading-text="LoadingText" :showFull=false v-if="loading"/>
 
                                             <div class="text-center">
